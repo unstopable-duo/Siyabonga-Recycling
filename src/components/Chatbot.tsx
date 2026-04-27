@@ -4,7 +4,25 @@ import { GoogleGenAI } from '@google/genai';
 import { AnimatePresence, motion } from 'motion/react';
 import ReactMarkdown from 'react-markdown';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+let aiClient: GoogleGenAI | null = null;
+function getAIClient() {
+  if (!aiClient) {
+    // Check import.meta.env first (standard Vite), fallback to process.env if available (Node/AI Studio)
+    let apiKey;
+    if (typeof import.meta.env !== 'undefined' && import.meta.env.VITE_SALUBRIOUS_GEMINI_API) {
+      apiKey = import.meta.env.VITE_SALUBRIOUS_GEMINI_API;
+    } else if (typeof process !== 'undefined' && process.env && process.env.Salubrious_Gemini_API) {
+      apiKey = process.env.Salubrious_Gemini_API;
+    } else if (typeof process !== 'undefined' && process.env && process.env.GEMINI_API_KEY) {
+      apiKey = process.env.GEMINI_API_KEY;
+    }
+    
+    if (apiKey && apiKey !== "undefined") {
+      aiClient = new GoogleGenAI({ apiKey });
+    }
+  }
+  return aiClient;
+}
 
 const SYSTEM_INSTRUCTION = `You are Siya-Bot, the official assistant for Siyabonga Recycling, a scrap yard and recycling center based in Gauteng, South Africa.
 
@@ -55,6 +73,13 @@ export function Chatbot() {
     setIsLoading(true);
 
     try {
+      const ai = getAIClient();
+      if (!ai) {
+        setMessages(prev => [...prev, { role: 'model', parts: [{ text: "Chatbot is temporarily offline. Please try again later or [contact us](/contact) directly!" }] }]);
+        setIsLoading(false);
+        return;
+      }
+
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: [

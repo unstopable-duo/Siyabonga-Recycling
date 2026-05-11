@@ -17,7 +17,7 @@
 
 @layer base {
   body {
-    @apply font-sans antialiased bg-[#FAFAF9] text-[#1A1A1A];
+    @apply font-sans antialiased bg-[#FAFAF9] text-[#1A1A1A] dark:bg-[#121212] dark:text-[#f8f8f8] transition-colors duration-500;
   }
   
   h1, h2, h3, h4, h5, h6 {

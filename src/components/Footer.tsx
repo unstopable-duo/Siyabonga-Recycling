@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin } from 'luc
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A1A1A] text-white pt-16 pb-8 border-t border-[#1A1A1A]/10 font-sans">
+    <footer className="bg-[#1A1A1A] text-white pt-16 pb-8 border-t border-[#1A1A1A]/10 dark:border-white/10 font-sans">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Col */}

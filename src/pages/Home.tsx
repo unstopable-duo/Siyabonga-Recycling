@@ -4,25 +4,25 @@ import { motion } from 'motion/react';
 
 export function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAFAF9] text-[#1A1A1A] font-sans">
+    <div className="flex flex-col min-h-screen bg-[#FAFAF9] dark:bg-[#121212] text-[#1A1A1A] dark:text-[#f8f8f8] font-sans">
       
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 flex-grow min-h-[85vh] border-b border-[#1A1A1A]/10 pb-0">
+      <section className="grid grid-cols-1 lg:grid-cols-12 flex-grow min-h-[85vh] border-b border-[#1A1A1A]/10 dark:border-white/10 pb-0">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="lg:col-span-7 p-8 md:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10"
+          className="lg:col-span-7 p-8 md:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10 dark:border-white/10"
         >
           <div className="inline-block bg-[#e6fced] text-[#034b18] text-[10px] uppercase tracking-[0.2em] px-3 py-1 font-bold mb-6 rounded-sm w-max">
             Germiston & Boksburg
           </div>
-          <h1 className="font-serif text-5xl md:text-[80px] leading-[0.85] tracking-tighter mb-8 max-w-2xl text-[#1A1A1A]">
+          <h1 className="font-serif text-5xl md:text-[80px] leading-[0.85] tracking-tighter mb-8 max-w-2xl text-[#1A1A1A] dark:text-[#f8f8f8]">
             Clean the community.<br/>
             <span className="text-[#05812A] italic">Get cash</span><br/>
             for your scrap.
           </h1>
-          <p className="text-lg max-w-md leading-relaxed text-[#4A4A4A] mb-12">
+          <p className="text-lg max-w-md leading-relaxed text-[#4A4A4A] dark:text-[#a0a0a0] mb-12">
              Siyabonga Recycling is a multi-purpose recycling center. We swap basic recycling materials for cash, and help free our community from pollution.
           </p>
           <div className="flex mb-12">
@@ -32,7 +32,7 @@ export function Home() {
              </NavLink>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-[#1A1A1A]/10 pt-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-[#1A1A1A]/10 dark:border-white/10 pt-10">
              {[
                { val: "Cash", label: "Immediate Payouts" },
                { val: "2", label: "Local Branches" },
@@ -46,7 +46,7 @@ export function Home() {
                  transition={{ duration: 0.5, delay: 0.2 + (i * 0.1) }}
                >
                  <div className="font-serif text-3xl mb-1 text-[#05812A]">{stat.val}</div>
-                 <div className="text-[10px] uppercase tracking-wider text-[#4A4A4A] font-bold">{stat.label}</div>
+                 <div className="text-[10px] uppercase tracking-wider text-[#4A4A4A] dark:text-[#a0a0a0] font-bold">{stat.label}</div>
                </motion.div>
              ))}
           </div>
@@ -60,7 +60,7 @@ export function Home() {
           className="lg:col-span-5 flex flex-col"
         >
           {/* Services Strip */}
-          <div className="p-8 md:p-16 border-b border-[#1A1A1A]/10 bg-[#1A1A1A] text-white">
+          <div className="p-8 md:p-16 border-b border-[#1A1A1A]/10 dark:border-white/10 bg-[#1A1A1A] text-white">
             <div className="flex items-center gap-3 mb-8">
               <span className="w-2 h-2 rounded-full bg-[#05812A] animate-pulse"></span>
               <h3 className="text-[10px] uppercase tracking-[0.2em] font-black opacity-80">What We Buy</h3>
@@ -93,11 +93,11 @@ export function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 border-b border-[#1A1A1A]/10 bg-white">
+      <section className="py-24 border-b border-[#1A1A1A]/10 dark:border-white/10 bg-white dark:bg-[#1c1c1c]">
         <div className="max-w-7xl mx-auto px-8 md:px-16">
           <div className="flex items-center gap-3 mb-16 relative">
              <div className="h-px bg-[#1A1A1A]/10 flex-grow"></div>
-             <h2 className="text-[10px] uppercase tracking-[0.2em] font-black text-[#1A1A1A] px-4 whitespace-nowrap">Word on the street</h2>
+             <h2 className="text-[10px] uppercase tracking-[0.2em] font-black text-[#1A1A1A] dark:text-[#f8f8f8] px-4 whitespace-nowrap">Word on the street</h2>
              <div className="h-px bg-[#1A1A1A]/10 flex-grow"></div>
           </div>
           
@@ -125,14 +125,14 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 key={i} 
-                className="flex flex-col p-8 border border-[#1A1A1A]/10 hover:border-[#05812A] hover:bg-[#FAFAF9] transition-all duration-300 rounded-sm"
+                className="flex flex-col p-8 border border-[#1A1A1A]/10 dark:border-white/10 hover:border-[#05812A] hover:bg-[#FAFAF9] dark:bg-[#121212] transition-all duration-300 rounded-sm"
               >
                 <div className="font-serif text-5xl text-[#05812A] mb-4 opacity-50">"</div>
-                <p className="text-sm text-[#4A4A4A] leading-relaxed mb-8 flex-grow font-medium">
+                <p className="text-sm text-[#4A4A4A] dark:text-[#a0a0a0] leading-relaxed mb-8 flex-grow font-medium">
                   {testimonial.text}
                 </p>
-                <div className="pt-4 border-t border-[#1A1A1A]/10">
-                  <h4 className="font-serif italic font-bold mb-1 text-[#1A1A1A]">{testimonial.author}</h4>
+                <div className="pt-4 border-t border-[#1A1A1A]/10 dark:border-white/10">
+                  <h4 className="font-serif italic font-bold mb-1 text-[#1A1A1A] dark:text-[#f8f8f8]">{testimonial.author}</h4>
                   <p className="text-[10px] uppercase tracking-[0.2em] text-[#05812A] font-bold">{testimonial.role}</p>
                 </div>
               </motion.div>

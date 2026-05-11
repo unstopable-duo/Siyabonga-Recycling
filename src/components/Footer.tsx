@@ -11,20 +11,6 @@ export function Footer() {
             <p className="text-sm leading-relaxed mb-6 opacity-70">
               Join us in freeing not just yourself but also the community from the ever-constant problem of pollution. Drop off, get paid.
             </p>
-            <div className="flex space-x-4 opacity-70">
-              <a href="#" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-[#05812A] hover:border-[#05812A] transition-all">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-[#05812A] hover:border-[#05812A] transition-all">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-[#05812A] hover:border-[#05812A] transition-all">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-[#05812A] hover:border-[#05812A] transition-all">
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -82,10 +68,6 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-white/60">
           <p>&copy; {new Date().getFullYear()} Siyabonga Recycling. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>

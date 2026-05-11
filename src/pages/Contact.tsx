@@ -126,7 +126,7 @@ export function Contact() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             onSubmit={handleSubmit} 
-            className="space-y-6 bg-white dark:bg-[#1c1c1c] p-8 md:p-12 border border-[#1A1A1A]/10 dark:border-white/10 shadow-lg relative group rounded-sm hover:border-[#1A1A1A]/20 dark:border-white/20 transition-all"
+            className="space-y-6 bg-white dark:bg-[#1c1c1c] p-8 md:p-12 border border-[#1A1A1A]/10 dark:border-white/10 shadow-lg relative group rounded-sm hover:border-[#1A1A1A]/20 dark:hover:border-white/20 transition-all"
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-[#05812A] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 rounded-t-sm"></div>
             <h3 className="text-2xl font-serif italic mb-8">Send an Inquiry</h3>
@@ -135,18 +135,18 @@ export function Contact() {
                  <div className="space-y-1">
                    <label htmlFor="name" className="text-[10px] uppercase tracking-[0.1em] font-bold text-[#1A1A1A] dark:text-[#f8f8f8]">Full Name</label>
                    <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required
-                     className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:bg-[#1c1c1c] outline-none transition-colors rounded-sm" />
+                     className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:focus:bg-[#1c1c1c] outline-none transition-colors rounded-sm" />
                  </div>
                  <div className="space-y-1">
                    <label htmlFor="email" className="text-[10px] uppercase tracking-[0.1em] font-bold text-[#1A1A1A] dark:text-[#f8f8f8]">Email Address</label>
                    <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required
-                     className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:bg-[#1c1c1c] outline-none transition-colors rounded-sm" />
+                     className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:focus:bg-[#1c1c1c] outline-none transition-colors rounded-sm" />
                  </div>
                </div>
                <div className="space-y-1">
                  <label htmlFor="message" className="text-[10px] uppercase tracking-[0.1em] font-bold text-[#1A1A1A] dark:text-[#f8f8f8]">Your Message</label>
                  <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} required rows={5}
-                   className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:bg-[#1c1c1c] outline-none transition-colors resize-none rounded-sm"></textarea>
+                   className="w-full px-4 py-3 bg-[#FAFAF9] dark:bg-[#121212] border border-[#1A1A1A]/10 dark:border-white/10 focus:border-[#05812A] focus:bg-white dark:focus:bg-[#1c1c1c] outline-none transition-colors resize-none rounded-sm"></textarea>
                </div>
                <div className="pt-4">
                  <button type="submit" disabled={isSubmitting} className="bg-[#1A1A1A] hover:bg-[#05812A] text-white px-8 py-3 text-[10px] uppercase tracking-widest font-bold transition-all w-full md:w-auto disabled:opacity-50 hover:-translate-y-0.5 rounded-sm shadow-md hover:shadow-lg">

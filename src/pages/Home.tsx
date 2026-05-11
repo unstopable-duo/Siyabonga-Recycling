@@ -125,7 +125,7 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 key={i} 
-                className="flex flex-col p-8 border border-[#1A1A1A]/10 dark:border-white/10 hover:border-[#05812A] hover:bg-[#FAFAF9] dark:bg-[#121212] transition-all duration-300 rounded-sm"
+                className="flex flex-col p-8 border border-[#1A1A1A]/10 dark:border-white/10 hover:border-[#05812A] hover:bg-[#FAFAF9] dark:hover:bg-[#121212] transition-all duration-300 rounded-sm"
               >
                 <div className="font-serif text-5xl text-[#05812A] mb-4 opacity-50">"</div>
                 <p className="text-sm text-[#4A4A4A] dark:text-[#a0a0a0] leading-relaxed mb-8 flex-grow font-medium">

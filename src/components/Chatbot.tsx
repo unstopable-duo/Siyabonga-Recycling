@@ -151,7 +151,7 @@ export function Chatbot() {
                         : 'bg-white dark:bg-[#1c1c1c] border border-[#1A1A1A]/10 dark:border-white/10 text-[#1A1A1A] dark:text-[#f8f8f8] rounded-tl-sm shadow-sm'
                     }`}
                   >
-                    <div className="markdown-body prose prose-sm max-w-none">
+                    <div className="markdown-body prose prose-sm max-w-none dark:prose-invert">
                        <ReactMarkdown>
                           {msg.parts[0].text}
                        </ReactMarkdown>

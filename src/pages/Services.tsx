@@ -68,7 +68,7 @@ export function Services() {
           >
             
             {/* Number & Title */}
-            <div className="lg:col-span-5 p-8 md:p-16 border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10 dark:border-white/10 flex flex-col justify-between bg-white dark:bg-[#1c1c1c] group-hover:bg-[#FAFAF9] dark:bg-[#121212] transition-colors duration-500">
+            <div className="lg:col-span-5 p-8 md:p-16 border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10 dark:border-white/10 flex flex-col justify-between bg-white dark:bg-[#1c1c1c] group-hover:bg-[#FAFAF9] dark:group-hover:bg-[#121212] transition-colors duration-500">
               <div>
                 <span className="text-[10px] uppercase tracking-[0.2em] font-black opacity-40 mb-4 block">
                   Operation {service.id}
@@ -114,7 +114,7 @@ export function Services() {
 
       {/* Materials & Process Section */}
       <div className="max-w-7xl mx-auto border-b border-[#1A1A1A]/10 dark:border-white/10 grid grid-cols-1 lg:grid-cols-2">
-        <div className="p-8 md:p-16 border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10 dark:border-white/10 bg-white dark:bg-[#1c1c1c] hover:bg-[#FAFAF9] dark:bg-[#121212] transition-colors duration-500">
+        <div className="p-8 md:p-16 border-b lg:border-b-0 lg:border-r border-[#1A1A1A]/10 dark:border-white/10 bg-white dark:bg-[#1c1c1c] hover:bg-[#FAFAF9] dark:hover:bg-[#121212] transition-colors duration-500">
           <h2 className="font-serif text-3xl mb-8">Typical Materials & Pricing</h2>
           <p className="text-sm text-[#4A4A4A] dark:text-[#a0a0a0] leading-relaxed mb-8">
             Scrap prices fluctuate based on global markets (like the London Metal Exchange), but we always offer competitive local rates for your goods. Here is what we typically buy:
@@ -144,14 +144,14 @@ export function Services() {
             </div>
           </div>
         </div>
-        <div className="p-8 md:p-16 bg-[#FAFAF9] dark:bg-[#121212] hover:bg-white dark:bg-[#1c1c1c] transition-colors duration-500">
+        <div className="p-8 md:p-16 bg-[#FAFAF9] dark:bg-[#121212] hover:bg-white dark:hover:bg-[#1c1c1c] transition-colors duration-500">
           <h2 className="font-serif text-3xl mb-8">How It Works</h2>
           <div className="space-y-8">
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
+              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:hover:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
             >
               <div className="text-[#05812A] font-black font-serif italic text-2xl">01</div>
               <div>
@@ -164,7 +164,7 @@ export function Services() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
+              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:hover:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
             >
               <div className="text-[#05812A] font-black font-serif italic text-2xl">02</div>
               <div>
@@ -177,7 +177,7 @@ export function Services() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
+              className="flex gap-4 p-4 border border-transparent hover:border-[#1A1A1A]/10 dark:hover:border-white/10 hover:shadow-sm transition-all rounded-sm bg-white dark:bg-[#1c1c1c]"
             >
               <div className="text-[#05812A] font-black font-serif italic text-2xl">03</div>
               <div>

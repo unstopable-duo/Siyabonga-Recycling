@@ -63,7 +63,7 @@ export function Layout() {
               ))}
               <NavLink
                 to="/contact"
-                className="text-[#1A1A1A] dark:text-[#f8f8f8] border border-[#1A1A1A]/20 dark:border-white/20 px-6 py-3 hover:bg-[#1A1A1A] hover:text-white transition-colors"
+                className="text-[#1A1A1A] dark:text-[#f8f8f8] border border-[#1A1A1A]/20 dark:border-white/20 px-6 py-3 hover:bg-[#1A1A1A] dark:hover:bg-[#f8f8f8] hover:text-white dark:hover:text-[#121212] transition-colors"
               >
                 Contact
               </NavLink>
